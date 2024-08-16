@@ -2,13 +2,10 @@ This repository contains the script to automatically annotate plaque scRNAseq da
 
 How to use it
 
-Download neccesary files:
-
-python download.py
-
 Install neccesary packages:
 
 Python:
+- gdown
 - scanpy
 - scarches
 - anndata
@@ -21,6 +18,11 @@ Python:
 
 R:
 - scran
+
+Download neccesary files:
+
+python download.py
+
 
 Alternativly, we also provide a docker image with all the packages installed and files downloaded at: https://github.com/matmu/cell_type_annotation. 
 
