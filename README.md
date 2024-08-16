@@ -31,7 +31,7 @@ python download.py
 
 Alternatively, we provide a Docker image with all packages installed and files downloaded at: [https://github.com/matmu/cell_type_annotation](https://github.com/matmu/cell_type_annotation).
 
-We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/](https://www.archmap.bio/#/)
+soon: We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/](https://www.archmap.bio/#/)
 
 ### Run Script
 
