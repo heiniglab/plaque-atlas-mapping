@@ -1,10 +1,12 @@
-This repository contains the script to automatically annotate plaque scRNAseq datasets with out atlas. 
+# Plaque scRNAseq Dataset Annotation
 
-How to use it
+This repository contains a script to automatically annotate plaque scRNAseq datasets using our atlas.
 
-Install neccesary packages:
+## How to Use
 
-Python:
+### Install Necessary Packages
+
+#### Python:
 - gdown
 - scanpy
 - scarches
@@ -16,27 +18,43 @@ Python:
 - rpy2
 - anndata2ri
 
-R:
+#### R:
 - scran
 
-Download neccesary files:
+### Download Necessary Files
 
+Run the following command:
+
+```
 python download.py
+```
 
+Alternatively, we provide a Docker image with all packages installed and files downloaded at: [https://github.com/matmu/cell_type_annotation](https://github.com/matmu/cell_type_annotation).
 
-Alternativly, we also provide a docker image with all the packages installed and files downloaded at: https://github.com/matmu/cell_type_annotation. 
+We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/](https://www.archmap.bio/#/)
 
-We also provide a fully automated solution in an interactive web framework at: https://www.archmap.bio/#/
+### Run Script
 
+Use the following command:
 
-Run script:
+```
+python automatic_mapping.py <filename> <lognorm> <celltype> <ensembleIDs>
+```
 
-python automatic_mapping.py <filename> <lognorm> <celltype> <ensembleIDs> 
-where the <filename> should be the path to the h5ad object that you want to map, <lognorm> to specify if your counts are log-normalized (true/false), <celltype> to specify if your object has a "cell_type_level2" column filled with "unknown" (true/false) and <ensemblIDs> to specify if your varnames are ensemblIDs (true/false). We recommend to input the counts after cells are removes with QC and to use ensemblIDs if possible. It you only have gene names, the script tries to map the gene names to ensemblIDs.
+Where:
+- `<filename>`: Path to the h5ad object you want to map
+- `<lognorm>`: Specify if your counts are log-normalized (true/false)
+- `<celltype>`: Specify if your object has a "cell_type_level2" column filled with "unknown" (true/false)
+- `<ensembleIDs>`: Specify if your varnames are ensemblIDs (true/false)
 
-Example:
-We also provide a example file that we also used to validate in the publication.
+We recommend inputting the counts after cells are removed with QC and using ensemblIDs if possible. If you only have gene names, the script attempts to map the gene names to ensemblIDs.
 
+### Example
+
+We provide an example file that we used for validation in the publication:
+
+```
 python automatic_mapping.py example_data/Bashore_postQC_noCITE_noR.h5ad false false false
+```
 
-Because its quite a lot of cells (75k cells) the normalization step will take some time. You will also need a Nvidia GPU (cuda) to run the script.
+Note: Because it contains a large number of cells (75k), the normalization step will take some time. You will also need an Nvidia GPU (CUDA) to run the script.
