@@ -8,8 +8,9 @@ def download_file(file_id, output_path):
 def main():
     # File IDs and their corresponding output paths
     files = [
-        {"id": "18wWAgTyXgmgcS4mX6Pqk3D4WtVbhiGc9", "path": "data/mse3-reload-hvg-level2-preint.h5ad"},
-        {"id": "1gnkwNtzAqEK9-H3FXgPqgPxWmdq1Uugp", "path": "example_data/Bashore_postQC_noCITE_noR.h5ad"}
+        {"id": "1gnkwNtzAqEK9-H3FXgPqgPxWmdq1Uugp", "path": "example_data/Bashore_postQC_noCITE_noR.h5ad"},
+        {"id": "1jJPHL2VEc4nW5z2pfgb8vJqC3lyt29iI", "path": "data/Big-Atlas-level12-log1p-hvg.h5ad"},
+        {"id": "1iUcYvDPHZQnEKHmaMjxgesDmSrcKuBRI", "path": "data/Big-Atlas-level122-log1p-hvg.h5ad"}
     ]
 
     for file in files:
