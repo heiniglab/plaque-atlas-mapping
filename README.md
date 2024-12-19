@@ -63,4 +63,4 @@ We provide an example file that we used for validation in the publication:
 python automatic_mapping_level1.py example_data/Hu_subset.h5ad false false true
 ```
 
-Note: Because it contains a large number of cells (75k), the normalization step will take some time. You will also need an Nvidia GPU (CUDA) to run the script.
+Note: Because it contains a large number of cells (37k), the normalization step will take some time. You will also need an Nvidia GPU (CUDA) to run the script.

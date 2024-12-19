@@ -6,6 +6,9 @@ def download_file(file_id, output_path):
     gdown.download(url, output_path, quiet=False)
 
 def main():
+    # Create the output directory if it doesn't exist
+    os.makedirs("output", exist_ok=True)
+
     # File IDs and their corresponding output paths
     files = [
         {"id": "1HFowENDJbQJTM9YmAbBxhvXwmBTdNCe5", "path": "example_data/Hu_subset.h5ad"},
