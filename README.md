@@ -50,7 +50,7 @@ python automatic_mapping_level2.py <filename> <lognorm> <celltype> <ensembleIDs>
 Where:
 - `<filename>`: Path to the h5ad object you want to map
 - `<lognorm>`: Specify if your counts are log-normalized (true/false)
-- `<celltype>`: Specify if your object has a "cell_type_level2" column filled with "unknown" (true/false)
+- `<celltype>`: Specify if your object has a "cell_type_level2" (or "cell_type_level1") column filled with "unknown" (true/false)
 - `<ensembleIDs>`: Specify if your varnames are ensemblIDs (true/false)
 
 We recommend inputting the counts after cells are removed with QC and using ensemblIDs if possible. If you only have gene names, the script attempts to map the gene names to ensemblIDs using a mapping used in our atlas.
@@ -63,4 +63,4 @@ We provide an example file that we used for validation in the publication:
 python automatic_mapping_level1.py example_data/Hu_subset.h5ad false false true
 ```
 
-Note: Because it contains a large number of cells (37k), the normalization step will take some time. You will also need an Nvidia GPU (CUDA) to run the script.
+Note: Because it contains a large number of cells (37k), the normalization step will take some time. You will also need a Nvidia GPU (CUDA) to run the script.
