@@ -7,7 +7,7 @@ This repository contains a script to automatically annotate plaque scRNAseq data
 ### Install Necessary Packages
 
 #### Python:
-- gdown (4.7.1)
+- gdown (5.2.0)
 - scanpy (1.9.6)
 - scarches (0.5.10)
 - anndata (0.10.3)
