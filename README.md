@@ -1,6 +1,6 @@
 # Plaque scRNAseq Dataset Annotation
 
-This repository contains a script to automatically annotate plaque scRNAseq datasets using our atlas.
+This repository contains a script to automatically annotate plaque scRNAseq datasets using our atlas (preprint: https://www.biorxiv.org/content/10.1101/2024.09.11.612431v1).
 
 ## How to Use
 
