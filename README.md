@@ -60,7 +60,7 @@ We recommend inputting the counts after cells are removed with QC and using ense
 We provide an example file that we used for validation in the publication:
 
 ```
-python automatic_mapping_level1.py example_data/Bashore_postQC_noCITE_noR.h5ad false false false
+python automatic_mapping_level1.py example_data/Hu.h5ad false false true
 ```
 
 Note: Because it contains a large number of cells (75k), the normalization step will take some time. You will also need an Nvidia GPU (CUDA) to run the script.
