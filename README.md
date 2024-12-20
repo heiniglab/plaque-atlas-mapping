@@ -29,10 +29,6 @@ Run the following command:
 python download.py
 ```
 
-Alternatively, we provide a Docker image with all packages installed and files downloaded at: [https://github.com/matmu/plaque-atlas-mapping_docker](https://github.com/matmu/plaque-atlas-mapping_docker). (we are currently updating it to the new version)
-
-We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/genemapper/create](https://www.archmap.bio/#/genemapper/create) (we are currently updating it to the new version)
-
 ### Run Script
 
 Use the following command to use the level 1 annotations (recommended):
@@ -64,3 +60,10 @@ python automatic_mapping_level1.py example_data/Hu_subset.h5ad false false true
 ```
 
 Note: Because it contains a large number of cells (37k), the normalization step will take some time. You will also need a Nvidia GPU (CUDA) to run the script.
+
+### Other options
+
+Alternatively, we provide a Docker image with all packages installed and files downloaded at: [https://github.com/matmu/plaque-atlas-mapping_docker](https://github.com/matmu/plaque-atlas-mapping_docker). (we are currently updating it to the new version)
+
+We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/genemapper/create](https://www.archmap.bio/#/genemapper/create) (we are currently updating it to the new version)
+
