@@ -8,6 +8,7 @@ def download_file(file_id, output_path):
 def main():
     # Create the output directory if it doesn't exist
     os.makedirs("output", exist_ok=True)
+    os.makedirs("example_data", exist_ok=True)
 
     # File IDs and their corresponding output paths
     files = [
