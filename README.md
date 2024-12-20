@@ -29,9 +29,9 @@ Run the following command:
 python download.py
 ```
 
-Alternatively, we provide a Docker image with all packages installed and files downloaded at: [https://github.com/matmu/cell_type_annotation](https://github.com/matmu/cell_type_annotation).
+Alternatively, we provide a Docker image with all packages installed and files downloaded at: [https://github.com/matmu/plaque-atlas-mapping_docker](https://github.com/matmu/plaque-atlas-mapping_docker). (we are currently updating it to the new version)
 
-We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/](https://www.archmap.bio/#/)
+We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/genemapper/create](https://www.archmap.bio/#/genemapper/create) (we are currently updating it to the new version)
 
 ### Run Script
 
