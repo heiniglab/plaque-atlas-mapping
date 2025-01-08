@@ -65,5 +65,6 @@ Note: Because it contains a large number of cells (37k), the normalization step 
 
 Alternatively, we provide a Docker image with all packages installed and files downloaded at: [https://github.com/matmu/plaque-atlas-mapping_docker](https://github.com/matmu/plaque-atlas-mapping_docker).
 
-We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/genemapper/create](https://www.archmap.bio/#/genemapper/create) (we are currently updating it to the new version)
+We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/genemapper/create](https://www.archmap.bio/#/genemapper/create). To use the tool, select “Plaque” as the atlas and “scPoli” as the model. The platform will then provide detailed instructions for uploading and preparing data for annotation.
+ (we are currently updating it to the new version)
 
