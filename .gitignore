@@ -4,3 +4,4 @@ data/Big-Atlas-level122-log1p-hvg.h5ad
 example_data/Bashore_postQC_noCITE_noR.h5ad
 subset.ipynb
 .DS_Store
+.vscode

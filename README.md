@@ -44,7 +44,7 @@ python automatic_mapping_level2.py <filename> <lognorm> <celltype> <ensembleIDs>
 ```
 
 Where:
-- `<filename>`: Path to the h5ad object you want to map
+- `<filename>`: Path to the h5ad object you want to map. Make sure you have a obs["sample"] to indicate the donor/sample the cell is coming from.
 - `<lognorm>`: Specify if your counts are log-normalized (true/false)
 - `<celltype>`: Specify if your object has a "cell_type_level2" (or "cell_type_level1") column filled with "unknown" (true/false)
 - `<ensembleIDs>`: Specify if your varnames are ensemblIDs (true/false)
