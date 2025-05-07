@@ -14,7 +14,7 @@ def main():
     files = [
         {"id": "1HFowENDJbQJTM9YmAbBxhvXwmBTdNCe5", "path": "example_data/Hu_subset.h5ad"},
         {"id": "1jJPHL2VEc4nW5z2pfgb8vJqC3lyt29iI", "path": "data/Big-Atlas-level12-log1p-hvg.h5ad"},
-        {"id": "1iUcYvDPHZQnEKHmaMjxgesDmSrcKuBRI", "path": "data/Big-Atlas-level122-log1p-hvg.h5ad"}
+        {"id": "1jpZY9SaVThDcorR5ksCz6kuWB_E7CWUA", "path": "data/Big-Atlas-level122-log1p-hvg-rev2.h5ad"}
     ]
 
     for file in files:

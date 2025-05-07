@@ -22,22 +22,13 @@ adata_input_file = sys.argv[1]
 lognorm_bool = str_to_bool(sys.argv[2])
 cell_type_bool = str_to_bool(sys.argv[3])
 ensembl_bool = str_to_bool(sys.argv[4])
-#tissue_name_file = sys.argv[5]
-
-# remove the .h5ad ending
-#tissue_name = tissue_name_file.split(".")[0]
-# remove the "TS_" prefix
-#tissue_name = tissue_name[3:]
-
-#print(f"Create dir healthy_mapping/TS/{tissue_name}2")
-#os.makedirs(f"healthy_mapping/TS/{tissue_name}2")
 
 
 ################## Loading in the atlas and model ##################
 
 print("Load model and atlas....")
 
-adata = sc.read_h5ad("data/Big-Atlas-level122-log1p-hvg.h5ad")
+adata = sc.read_h5ad("data/Big-Atlas-level122-log1p-hvg-rev2.h5ad")
 
 #load trained reference model
 early_stopping_kwargs = {
@@ -58,7 +49,7 @@ embedding_dims=10,
 recon_loss='mse',
 )
 
-scpoli_loaded = scpoli_model.load(dir_path="models/reference_retraining22", adata=adata)
+scpoli_loaded = scpoli_model.load(dir_path="models/reference_retraining22-rev2", adata=adata)
 
 
 ################## Loading in the mapping data ##################
@@ -185,7 +176,7 @@ if cell_type_bool == False:
 
 
 print("Select the varnames for the model....")
-varnames_path = "models/reference_retraining22/var_names.csv"
+varnames_path = "models/reference_retraining22-rev2/var_names.csv"
 var_names = np.genfromtxt(varnames_path, delimiter=",", dtype=str)
 adata2 = _validate_var_names(adata_final, var_names)
 
@@ -328,6 +319,7 @@ color_palette_level2 = {
 
     'EndoMT EC': '#FFD700',                    # Gold
     'Pro-Angiogenic EC': '#ED9121',            # Carrot Orange
+    'EC': 'yellow',                            # Yellow
 
     'Fibroblast': '#e377c2',                   # bright pink
     'Fibromyocyte': '#f7b6d2',                 # pastel pink
