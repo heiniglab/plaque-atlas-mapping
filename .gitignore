@@ -1,7 +1,9 @@
 data/mse3-reload-hvg-level2-preint.h5ad
 data/Big-Atlas-level12-log1p-hvg.h5ad
 data/Big-Atlas-level122-log1p-hvg.h5ad
+data/Big-Atlas-level122-log1p-hvg-rev2.h5ad
 example_data/Bashore_postQC_noCITE_noR.h5ad
+example_data/Hu_subset.h5ad
 subset.ipynb
 .DS_Store
 .vscode
