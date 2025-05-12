@@ -7,3 +7,4 @@ example_data/Hu_subset.h5ad
 subset.ipynb
 .DS_Store
 .vscode
+archmap/
