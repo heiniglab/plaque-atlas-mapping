@@ -1,6 +1,6 @@
 # Plaque scRNAseq Dataset Annotation
 
-This repository contains a script to automatically annotate plaque scRNAseq datasets using our atlas (preprint: https://www.biorxiv.org/content/10.1101/2024.09.11.612431v1).
+This repository contains a script to automatically annotate plaque scRNAseq datasets using our atlas (https://www.nature.com/articles/s41467-025-63202-x).
 
 ## How to Use
 
@@ -68,3 +68,25 @@ Alternatively, we provide a Docker image with all packages installed and files d
 We also offer a fully automated solution in an interactive web framework at: [https://www.archmap.bio/#/genemapper/create](https://www.archmap.bio/#/genemapper/create). To use the tool, select “Plaque” as the atlas and “scPoli” as the model. The platform will then provide detailed instructions for uploading and preparing data for annotation.
  (we are currently updating it to the new version)
 
+## Citation
+
+If you use this resource, please cite our paper:
+
+Traeuble, K., Munz, M., Pauli, J. et al. Integrated single-cell atlas of human atherosclerotic plaques. Nat Commun 16, 8255 (2025). https://doi.org/10.1038/s41467-025-63202-x
+
+### BibTeX
+```bibtex
+@ARTICLE{Traeuble2025,
+  title     = "Integrated single-cell atlas of human atherosclerotic plaques",
+  author    = "Traeuble, Korbinian and Munz, Matthias and Pauli, Jessica and
+               Sachs, Nadja and Vafadarnejad, Eshan and Carrillo-Roa, Tania and
+               Maegdefessel, Lars and Kastner, Peter and Heinig, Matthias",
+  journal   = "Nat. Commun.",
+  publisher = "Nature Publishing Group",
+  volume    =  16,
+  number    =  1,
+  pages     = "1--16",
+  month     =  sep,
+  year      =  2025,
+  language  = "en"
+}
